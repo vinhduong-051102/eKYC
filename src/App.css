@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Google Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Google Sans Regular'), url('./font/GoogleSans-Regular.ttf');
+}
+
+.App {
+  /*text-align: center;*/
+  font-family: 'Google Sans Regular';
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  #choose-styles {
+    position: absolute;
+    top: 0;
+    background: aliceblue;
+    width: 100%;
+  }
+}
+
+.ant-form {
+  margin: 0 30px !important;
+}
+.btn-start-check {
+  height: 32px;
+  width: 200px;
+  border-radius: 20px;
+  background: #1967B2;
+  border: none;
+  color: white;
+  display: block;
+  margin: auto;
+}
+
+.btn-start-check:hover {
+  background: #1967b2e6;
+}
+
+.label {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ant-input {
+  width: 185px;
+  float: right;
+}
+.ant-select-selector {
+  width: 93% !important;
+}
+
+.ant-select.ant-select-in-form-item {
+  width: 95%;
+}
+
+@media (max-width: 768px) {
+  .color-picker-swatch {
+    float: unset !important;
+    width: unset !important;
+  }
+  .ant-input {
+    width: 93%;
+  }
+
+  .ant-select.ant-select-in-form-item {
+    width: 100%;
+  }
+
+  .ant-form-item .ant-form-item-label {
+     padding: 0;
+  }
+}
